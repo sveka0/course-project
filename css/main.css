@@ -1,12 +1,15 @@
 body {
   background-color: #191919;
-  width: 100%;
-  height: 100%;
-  font-family: "DM Sans", sans-serif; 
+  font-family: "DM Sans", sans-serif;
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
+
 ul {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 a {
@@ -23,31 +26,38 @@ a:active {
 
 /* Navbar */
 
-.nav-container {
-  height: 100%;
-  display: flex;
-  padding: 0 10px;
+.navbar {
+  background-color: #191919;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
 }
+
+.nav-container {
+  display: flex;
+  height: 119px;
+  padding: 0 10px;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .menu {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-left: auto;
 }
+
 .menu_item {
   display: flex;
+  align-items: center;
+  gap: 20px;
   cursor: pointer;
   padding: 0 10px;
   color: #191919;
   font-size: 18px;
   font-weight: 500;
-}
-
-.nav-container ul {
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
 }
 
 .nav-container li {
@@ -59,7 +69,7 @@ a:active {
 }
 
 .logo img {
-  width: 100%;
+  max-width: 100%;
 }
 
 /* info */
@@ -213,7 +223,7 @@ h4 {
 }
 
 .img-person {
-  height: 743.44;
+  height: 743.44px;
   border-radius: 10px;
 }
 
@@ -321,8 +331,8 @@ input[type="email"] {
 .cont-col img {
   margin-left: 10px;
   margin-right: 0;
-  margin-top: 50px;
-  }
+  margin-top: 0;
+}
 
 .col-name {
   font-size: 24px;
@@ -358,6 +368,7 @@ footer {
   align-items: center;
   font-size: 17px;
 }
+
 .menu-column:last-child {
   margin-right: 0px;
 }
@@ -408,41 +419,24 @@ footer {
   margin: 5px;
 }
 
-/* ----------------------------------- */
 
-@media screen and (max-width: 1440px) {
-  body {
-    width: 100%;
-    height: auto;
+/* Для устройств с шириной экрана менее 768px (мобильные устройства) */
+@media screen and (max-width: 767px) {
+  .menu_item {
+    display: none; /* Скрыть пункты меню */
   }
-  
-}
-@media screen and (max-width: 1024px) {
-  body {
-    width: 100%;
-    height: auto;
+
+  .burger {
+    display: block; /* Показать иконку бургера */
   }
 }
 
-@media screen and (max-width: 768px) {
-  body {
-    width: 100%;
-    height: auto;
-  }
+/* Для устройств с шириной экрана от 768px до 1024px (планшеты) */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  /* Можно добавить дополнительные стили для планшетных устройств */
 }
 
-@media screen and (max-width: 576px) {
-  body {
-    width: 100%;
-    height: auto;
-  }
+/* Для устройств с шириной экрана более 1024px (настольные компьютеры) */
+@media screen and (min-width: 1025px) {
+  /* Можно добавить дополнительные стили для настольных устройств */
 }
-
-@media screen and (max-width: 376px) {
-  body {
-    width: 100%;
-    height: auto;
-  }
-}
-
-
