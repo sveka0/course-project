@@ -486,6 +486,15 @@ footer {
     gap: 30px;
   }
 
+  .menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    gap: 30px;
+  }
+
   .img1 {
     margin-left: 0;
     margin-bottom: 20px;
@@ -589,6 +598,7 @@ footer {
   .img-person{
     width: 80%;
     height: auto;
+
   }
 
   .img-cont{
