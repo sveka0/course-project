@@ -26,13 +26,14 @@
               <li class="menu_item"><a href="#">Contact</a></li>
             </ul>
           </div>
-          <div class="burger-menu">
-            <div class="burger">
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-            <ul class="b_menu">
+
+          <div class="burger-toggle" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </div>
+          <div class="burger-menu" id="burgerMenu">
+            <ul>
               <li><a href="#">Home</a></li>
               <li><a href="#">Episodes</a></li>
               <li><a href="#">About</a></li>
@@ -123,7 +124,12 @@
           </p>
         </div>
 
-        <img src="images/IMAGE (14).png" alt="" width="650" class="img-person" />
+        <img
+          src="images/IMAGE (14).png"
+          alt=""
+          width="650"
+          class="img-person"
+        />
       </div>
 
       <div class="email">
