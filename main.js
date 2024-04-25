@@ -22,3 +22,14 @@ createImages(column3, 5);
 createImages(column4, 5);
 createImages(column5, 5);
 createImages(column6, 5);
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  const burger = document.querySelector('.burger');
+  const menu = document.querySelector('.b_menu');
+
+  burger.addEventListener('click', function() {
+    menu.classList.toggle('active');
+  });
+});
+
