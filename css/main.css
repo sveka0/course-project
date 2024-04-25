@@ -470,6 +470,21 @@ footer {
     gap: 30px;
     overflow: hidden;
   }
+  .logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .navbar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    gap: 30px;
+  }
 
   .img1 {
     margin-left: 0;
