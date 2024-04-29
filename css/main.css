@@ -510,7 +510,7 @@ footer {
   .burger-toggle {
     display: block;
     cursor: pointer;
-    position: fixed;
+    position: absolute;; 
     align-self: start;
     padding-left: 40px;
     margin-top: 30px;
